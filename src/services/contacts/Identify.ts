@@ -2,8 +2,8 @@ import { Prisma } from "@prisma/client"
 import PrismaCrud from "../../crud/prisma"
 
 type IDoc = {
-    email?: string,
-    phoneNumber?: string
+    email?: string | null | undefined,
+    phoneNumber?: string | null | undefined
 }
 
 type Iresp<T> = {
