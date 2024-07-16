@@ -74,8 +74,8 @@ export default class Identify {
                     // checking if given combination exist in db
                     if (doc.email == e.email && doc.phoneNumber == e.phoneNumber) comb_exist = true
                     // checking if given mail or phone exists seperately
-                    if (doc.email && doc.email == e.email) mail_exist = true
-                    if (doc.phoneNumber && doc.phoneNumber == e.phoneNumber) phn_exist = true
+                    if (doc.email == e.email) mail_exist = true
+                    if (doc.phoneNumber == e.phoneNumber) phn_exist = true
                 })
                 // adding entry if no entry for given mail or phone
                 if (!mail_exist || !phn_exist) {
